@@ -3,96 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ravi Sharma - Data Scientist</title>
-
-    <!-- Link to Google Fonts and Font Awesome for icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+    <title>Ravi Sharma - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="container">
-                <div class="logo">
-                    <h1>Ravi Sharma</h1>
-                    <p>Data Scientist | Machine Learning Enthusiast</p>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/ravi-sharma24/" target="_blank" class="icon-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/zravii" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
-                </div>
+    <div class="theme-switch">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <div class="chatbot-widget" id="chatbotWidget">
+        <div class="chatbot-icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="chatbot-popup hidden">
+            <div class="chatbot-header">
+                <h3>Hey! I'm RaviBot 🤖</h3>
+                <button class="close-btn">&times;</button>
             </div>
-        </nav>
+            <div class="chatbot-content">
+                <p>Loading my smart brain... Chat with you soon! 🚀</p>
+            </div>
+        </div>
+    </div>
+
+    <header class="animate__animated animate__fadeIn">
+        <h1>Hey, I'm Ravi Sharma <span class="wave">👋</span></h1>
+        <div id="rotating-text" class="subtitle"></div>
+        <a href="https://linkedin.com/in/ravi-sharma24" target="_blank" class="linkedin-button">
+            <i class="fab fa-linkedin"></i> Let's Connect!
+        </a>
     </header>
 
-    <!-- Sections -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a **Data Scientist** with a passion for using data to solve real-world problems. Currently pursuing a **Master's in Data Science** at **Indiana University**, I focus on projects that bridge the gap between technology and business challenges. My goal is to create solutions that bring real value to businesses.</p>
-            <p>Email: <a href="mailto:ravishar@iu.edu">ravishar@iu.edu</a></p>
+    <section id="about" class="animate__animated animate__fadeInUp">
+        <h2><i class="fas fa-rocket"></i> What I Do</h2>
+        <div class="glass-card">
+            <p>
+                I turn coffee into code and data into decisions! ☕ When I'm not teaching AI to be smarter, 
+                you'll find me solving puzzles or explaining to my cat why my neural network isn't converging. 🐱
+            </p>
         </div>
     </section>
 
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Indiana University Bloomington, IN</strong> | Master of Science in Data Science | GPA: 3.75/4 (Aug 2023 - May 2025)</li>
-                <li><strong>Savitribai Phule Pune University, Pune, India</strong> | Bachelor’s in Computer Engineering, Honors in Data Science | CGPA: 8.84/10 (Aug 2019 - Apr 2023)</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Programming Languages:</strong> Python, R, Java, C++, C</li>
-                <li><strong>Data Manipulation:</strong> Pandas, Numpy, SQL, MySQL, PostgreSQL, Excel</li>
-                <li><strong>Machine Learning:</strong> Scikit-learn, Keras, TensorFlow, PyTorch, GANs, Classification, Clustering, Feature Engineering, MLOps</li>
-                <li><strong>Statistics:</strong> Probability and Statistics fundamentals, Hypothesis testing, Regression analysis</li>
-                <li><strong>Data Visualization:</strong> Tableau, PowerBI, Matplotlib, Seaborn, Vega-Altair</li>
-                <li><strong>Platforms:</strong> AWS, Azure, Databricks</li>
-                <li><strong>Domain Knowledge:</strong> Business, Manufacturing, Supply Chain</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="experience">
-        <div class="container">
-            <h2>Professional Experience</h2>
-            <div class="job">
-                <h3>Associate Instructor, Luddy School of Informatics</h3>
-                <p><strong>Aug 2024 - Present</strong> | Bloomington, IN</p>
-                <ul>
-                    <li>Led discussions and review sessions for 60+ graduate students on advanced topics like GANs, VAEs, and signal processing in Deep Learning Systems (E533) and Machine Learning for Signal Processing (E511).</li>
-                    <li>Collaborated with 2 faculty members and 4 Associate Instructors to optimize course content and assessments, maintaining a 91% average class performance.</li>
-                    <li>Designed and assessed challenging assignments and quizzes evaluating students' application of complex machine learning techniques.</li>
-                </ul>
+    <section id="skills" class="animate__animated animate__fadeInUp">
+        <h2><i class="fas fa-stars"></i> Skills & Superpowers</h2>
+        <div class="skills-container">
+            <div class="skill-card" data-tilt>
+                <i class="fas fa-code"></i>
+                <h3>Languages</h3>
+                <p>Python, Java, C++</p>
+            </div>
+            <div class="skill-card" data-tilt>
+                <i class="fas fa-database"></i>
+                <h3>Data Tools</h3>
+                <p>Pandas, SQL, PostgreSQL</p>
+            </div>
+            <div class="skill-card" data-tilt>
+                <i class="fas fa-brain"></i>
+                <h3>ML & AI</h3>
+                <p>TensorFlow, Scikit-learn</p>
             </div>
         </div>
     </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong><a href="https://github.com/zravii/Google-Earth-Predicts-School-Success" target="_blank">Google Earth Predicts School Success</a></strong>: Used ResNet50 to predict student success by analyzing aerial views of schools, achieving 62.09% accuracy considering surrounding areas.</li>
-            </ul>
+    <section id="projects" class="animate__animated animate__fadeInUp">
+        <h2><i class="fas fa-star"></i> Cool Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>🌍 Google Earth Predicts School Success</h3>
+                    <p>Teaching AI to be a satellite detective! 63% accuracy in predicting student success.</p>
+                    <a href="https://github.com/zravii/Google-Earth-Predicts-School-Success" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> Check it out
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>🎓 IU Student Well-being</h3>
+                    <p>Making college life less stressful, one data point at a time!</p>
+                    <a href="https://github.com/zravii/EDA" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> Check it out
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>👁️ DRISHTI: Accessibility for All</h3>
+                    <p>Because everyone deserves to experience technology!</p>
+                    <a href="https://github.com/zravii/Computer-Vision" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> Check it out
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Ravi Sharma | All Rights Reserved</p>
-        </div>
+        <p>© 2024 Ravi Sharma. Built with 💻 and lots of ☕</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
