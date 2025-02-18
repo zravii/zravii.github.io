@@ -3,114 +3,210 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ravi Sharma | Data Scientist</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <title>Ravi Sharma - Data Scientist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background-color: #2C3E50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3em;
+      font-weight: 700;
+      margin: 0;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2em;
+      animation: fadeIn 2s ease-in-out 1s;
+    }
+
+    .content {
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 2em;
+      font-weight: 700;
+      color: #2C3E50;
+      border-bottom: 3px solid #3498db;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    .skills ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .skills li {
+      background-color: #ecf0f1;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-size: 1.1em;
+      transition: transform 0.3s;
+    }
+
+    .skills li:hover {
+      transform: scale(1.05);
+    }
+
+    .projects ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .projects li {
+      margin: 10px 0;
+    }
+
+    .projects a {
+      color: #3498db;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+
+    .projects a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #2C3E50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ecf0f1;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.2em;
+    }
+
+    footer a:hover {
+      color: #3498db;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .section-content {
+      animation: fadeIn 2s ease-in-out;
+    }
+
+  </style>
 </head>
 <body>
 
-  <header>
-    <nav>
-      <div class="logo">Ravi Sharma</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <h1>Ravi Sharma</h1>
+  <p>Data Scientist | Passionate About Solving Business Problems with Data</p>
+</header>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h1>Welcome to My Portfolio</h1>
-      <p>I'm a Data Scientist passionate about using data to solve real-world problems, especially with meaningful business impact. Currently pursuing my Master's in Data Science at Indiana University. I focus on projects bridging technology and business challenges to create impactful solutions.</p>
-    </div>
+<div class="content">
+  <section>
+    <div class="section-title">About Me</div>
+    <p class="section-content">I'm a **Data Scientist** with a passion for using data to solve real-world problems, especially those that have a meaningful business impact. Coming from a **business family** and currently pursuing my **Master's in Data Science** at **Indiana University**, I focus on projects that bridge the gap between technology and business challenges. For me, the ultimate goal is to create solutions that not only work technically but also bring real value to businesses.</p>
   </section>
 
-  <section id="education" class="section">
-    <div class="container">
-      <h2>Education</h2>
+  <section>
+    <div class="section-title">Education</div>
+    <p class="section-content">
+      <strong>Indiana University Bloomington, IN</strong><br>
+      Master of Science in Data Science | GPA: 3.75/4<br>
+      Aug 2023 - May 2025<br><br>
+      <strong>Savitribai Phule Pune University, Pune, India</strong><br>
+      Bachelor’s in Computer Engineering, Honors in Data Science | CGPA: 8.84/10<br>
+      Aug 2019 - Apr 2023
+    </p>
+  </section>
+
+  <section>
+    <div class="section-title">Skills</div>
+    <div class="section-content skills">
       <ul>
-        <li><strong>Master of Science in Data Science</strong>, Indiana University, Bloomington, IN (Aug 2023 - May 2025) | GPA: 3.75/4</li>
-        <li><strong>Bachelor's in Computer Engineering, Honors in Data Science</strong>, Savitribai Phule Pune University, Pune, India (Aug 2019 - Apr 2023) | CGPA: 8.84/10</li>
+        <li>Python, R, Java, C++, C</li>
+        <li>Pandas, Numpy, SQL, MySQL, PostgreSQL</li>
+        <li>Scikit-learn, Keras, TensorFlow, PyTorch</li>
+        <li>Probability, Statistics, Regression Analysis</li>
+        <li>Tableau, PowerBI, Matplotlib, Seaborn</li>
+        <li>AWS, Azure, Databricks</li>
+        <li>Business, Manufacturing, Supply Chain</li>
       </ul>
     </div>
   </section>
 
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skill-set">
-        <div><strong>Programming Languages:</strong> Python, R, Java, C++, C</div>
-        <div><strong>Data Manipulation:</strong> Pandas, Numpy, SQL, MySQL, PostgreSQL, Excel</div>
-        <div><strong>Machine Learning:</strong> Scikit-learn, Keras, TensorFlow, PyTorch, GAN, Classification, Clustering, MLOps</div>
-        <div><strong>Statistics:</strong> Probability & Statistics, Hypothesis testing, Regression analysis</div>
-        <div><strong>Data Visualization:</strong> Tableau, PowerBI, Matplotlib, Seaborn, Vega-Altair</div>
-        <div><strong>Platforms:</strong> AWS, Azure, Databricks</div>
-        <div><strong>Domain Knowledge:</strong> Business, Manufacturing, Supply Chain</div>
-      </div>
+  <section>
+    <div class="section-title">Professional Experience</div>
+    <div class="section-content">
+      <strong>Associate Instructor, Luddy School of Informatics, Computing, and Engineering, Bloomington, IN</strong><br>
+      Aug 2024 - Present<br>
+      <ul>
+        <li>Lead discussions for 60+ graduate students on advanced topics like GANs and signal processing.</li>
+        <li>Collaborated with faculty and other Associate Instructors to optimize course content.</li>
+        <li>Designed and assessed challenging assignments, maintaining 91% class performance.</li>
+      </ul><br>
+
+      <strong>Research Data Analyst, Kelly School of Business, Bloomington, IN</strong><br>
+      May 2024 - Aug 2024<br>
+      <ul>
+        <li>Designed a data pipeline for cleaning ASLGF data, managing 500,000+ rows.</li>
+        <li>Engineered algorithms for wastewater and water system analysis to enhance financial assessments.</li>
+      </ul><br>
+
+      <strong>Data Analyst Intern, Pacific Chemicals, GJ, India</strong><br>
+      Oct 2021 - May 2022<br>
+      <ul>
+        <li>Developed a data pipeline for over 15,000 entries from ERP software to SQL server.</li>
+        <li>Created Power BI dashboards for executive decision-making, reducing operational expenses by 5%.</li>
+      </ul>
     </div>
   </section>
 
-  <section id="experience" class="section">
-    <div class="container">
-      <h2>Professional Experience</h2>
-      <div class="experience-item">
-        <h3>Associate Instructor</h3>
-        <p><strong>Luddy School of Informatics, Bloomington, IN</strong> (Aug 2024 - Present)</p>
-        <ul>
-          <li>Lead discussions and review sessions for 60+ graduate students on advanced topics like GANs, VAEs, and signal processing.</li>
-          <li>Collaborated with faculty to optimize course content, fostering a seamless learning experience.</li>
-          <li>Designed and assessed assignments, maintaining a 91% average class performance.</li>
-        </ul>
-      </div>
-      <div class="experience-item">
-        <h3>Research Data Analyst</h3>
-        <p><strong>Kelly School of Business, Bloomington, IN</strong> (May 2024 - Aug 2024)</p>
-        <ul>
-          <li>Designed a data pipeline for cleaning and analyzing over 500,000 rows of ASLGF data.</li>
-          <li>Engineered algorithms to correlate wastewater plants with municipal datasets, enhancing financial assessments.</li>
-        </ul>
-      </div>
-      <div class="experience-item">
-        <h3>Data Analyst Intern</h3>
-        <p><strong>Pacific Chemicals, India</strong> (Oct 2021 - May 2022)</p>
-        <ul>
-          <li>Developed a data pipeline for transferring 15,000 entries to SQL, improving data flow efficiency.</li>
-          <li>Created Power BI dashboards for executive decision-making, resulting in a 5% reduction in operational expenses.</li>
-        </ul>
-      </div>
+  <section>
+    <div class="section-title">Projects</div>
+    <div class="section-content projects">
+      <ul>
+        <li><a href="https://github.com/zravii/Google-Earth-Predicts-School-Success" target="_blank">Google Earth Predicts School Success</a></li>
+        <li><a href="https://github.com/zravii/EDA" target="_blank">IU Student Well-being</a></li>
+        <li><a href="https://github.com/zravii/Computer-Vision" target="_blank">DRISHTI: Accessibility for All</a></li>
+      </ul>
     </div>
   </section>
+</div>
 
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects I'm Proud Of</h2>
-      <div class="project">
-        <h3><a href="https://github.com/zravii/Google-Earth-Predicts-School-Success" target="_blank">Google Earth Predicts School Success</a></h3>
-        <p>Used ResNet50 to predict student success by analyzing aerial views of schools, achieving 62.09% accuracy.</p>
-      </div>
-      <div class="project">
-        <h3><a href="https://github.com/zravii/EDA" target="_blank">IU Student Well-being</a></h3>
-        <p>Conducted a survey and analysis on stress at IU, identifying academics as the top stress factor in 87% of students.</p>
-      </div>
-      <div class="project">
-        <h3><a href="https://github.com/zravii/Computer-Vision" target="_blank">DRISHTI: Accessibility for All</a></h3>
-        <p>Spearheaded a team to develop a CNN-based object detection system for visually impaired users, achieving 78.5% accuracy.</p>
-      </div>
-    </div>
-  </section>
+<footer>
+  <p>Connect with me:</p>
+  <a href="https://linkedin.com/in/ravi-sharma24" target="_blank">LinkedIn</a> |
+  <a href="https://github.com/zravii" target="_blank">GitHub</a>
+</footer>
 
-  <footer>
-    <div class="container">
-      <p>Connect with me: <a href="https://linkedin.com/in/ravi-sharma24" target="_blank">LinkedIn</a> | <a href="https://github.com/zravii" target="_blank">GitHub</a></p>
-    </div>
-  </footer>
-
-  <script src="scripts.js"></script>
 </body>
 </html>
