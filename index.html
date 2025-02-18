@@ -3,6 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravi Sharma - Data Science Portfolio</title>
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome icons for social media and design elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <a href="#home">Home</a>
+            <a href="#education-section">Education</a>
+            <a href="#skills-section">Skills</a>
+            <a href="#experience-section">Experience</a>
+            <a href="#projects-section">Projects</a>
+            <a href="#certifications-section">Certifications</a>
+        </div>
+        <button id="dark-mode-toggle">🌙</button>
+    </div>
+
+    <section id="home" class="section animate__animated animate__fadeIn animate__delay-1s">
+        <h2>Welcome to My Data Science Portfolio</h2>
+        <p>I'm a Data Scientist with a passion for using data to solve real-world problems...</p>
+    </section>
+
+    <section id="education-section" class="section animate__animated animate__fadeIn">
+        <h2>Education</h2>
+        <div class="section-content">
+            <div>
+                <h3>Indiana University Bloomington, IN</h3>
+                <p>Master of Science in Data Science | GPA: 3.75/4</p>
+            </div>
+            <div>
+                <h3>Savitribai Phule Pune University, Pune, India</h3>
+                <p>Bachelor’s in Computer Engineering, Honors in Data Science | CGPA: 8.84/10</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills-section" class="section animate__animated animate__fadeIn">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Python, R, Java, C++, C</li>
+            <li>Data Manipulation: Pandas, Numpy, SQL, MySQL, PostgreSQL, Excel</li>
+            <li>Machine Learning: Scikit-learn, Keras, TensorFlow, PyTorch, GAN</li>
+            <li>Data Visualization: Tableau, PowerBI, Matplotlib, Seaborn</li>
+        </ul>
+    </section>
+
+    <section id="experience-section" class="section animate__animated animate__fadeIn">
+        <h2>Professional Experience</h2>
+        <div class="section-content">
+            <div>
+                <h3>Associate Instructor</h3>
+                <p>Luddy School of Informatics, Bloomington, IN | Aug 2024 - Present</p>
+                <p>Lead discussions for graduate students on advanced machine learning topics.</p>
+            </div>
+            <div>
+                <h3>Research Data Analyst</h3>
+                <p>Kelly School of Business, Bloomington, IN | May 2024 - Aug 2024</p>
+                <p>Designed data pipelines for ASLGF data and enhanced financial assessments.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-section" class="section animate__animated animate__fadeIn">
+        <h2>Projects</h2>
+        <h3>Google Earth Predicts School Success</h3>
+        <p>Led the development of a predictive model using aerial images, achieving 63% accuracy.</p>
+        <h3>IU Student Well-being: Surveys, Insights and Predictive Analysis</h3>
+        <p>Spearheaded data collection initiative and developed predictive models for student stress.</p>
+    </section>
+
+    <section id="certifications-section" class="section animate__animated animate__fadeIn">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Data Analytics using Python - IIT Kharagpur</li>
+            <li>Machine Learning A-Z™ - Udemy</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ravi Sharma | Data Scientist Portfolio</p>
+    </footer>
+
+    <!-- Chatbot Icon -->
+    <button id="chatbot-icon" class="animate__animated animate__bounce" onclick="toggleChatbot()">💬</button>
+
+    <!-- Chatbot Modal -->
+    <div id="chatbot-modal">
+        <h3>Chatbot</h3>
+        <div id="chatbot-content">
+            <!-- Dialogflow or Custom Chatbot Content Here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ravi Sharma - Portfolio</title>
     <!-- Link to custom stylesheet -->
     <link rel="stylesheet" href="style.css">
