@@ -1,10 +1,9 @@
-// Chatbot Popup Animation
-const chatbotIcon = document.getElementById('chatbot-icon');
-chatbotIcon.addEventListener('mouseover', () => {
-    const popup = chatbotIcon.querySelector('.chatbot-popup');
-    popup.style.display = 'block';
-});
-chatbotIcon.addEventListener('mouseout', () => {
-    const popup = chatbotIcon.querySelector('.chatbot-popup');
-    popup.style.display = 'none';
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
 });
