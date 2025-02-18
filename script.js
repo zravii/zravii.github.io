@@ -4,13 +4,14 @@ themeSwitch.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
 });
 
-// Chatbot Widget Toggle
+// Chatbot Widget Toggle with Pop-up animation
 const chatbotWidget = document.querySelector('.chatbot-widget');
 const chatbotPopup = document.querySelector('.chatbot-popup');
 const closeBtn = document.querySelector('.close-btn');
 
 chatbotWidget.addEventListener('click', () => {
     chatbotPopup.classList.toggle('hidden');
+    chatbotWidget.classList.toggle('animate__bounce');
 });
 
 closeBtn.addEventListener('click', () => {
@@ -19,7 +20,7 @@ closeBtn.addEventListener('click', () => {
 
 // Rotating text functionality for header
 let rotatingText = document.querySelector('#rotating-text');
-let texts = ["Data Scientist", "Machine Learning Engineer", "AI Enthusiast", "Teacher & Mentor", "Data Science Guru"];
+let texts = ["Data Scientist", "Machine Learning Engineer", "AI Enthusiast"];
 let index = 0;
 
 setInterval(() => {
