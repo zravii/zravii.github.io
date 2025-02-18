@@ -1,105 +1,89 @@
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f9;
+    background-color: #f4f4f4;
     color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0;
 }
 
-/* Header */
 header {
-    background: linear-gradient(120deg, #2575fc, #6a11cb);
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
-    padding: 20px 0;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3em;
     font-weight: bold;
 }
 
-header p {
-    font-size: 1.1rem;
-    font-weight: 300;
+header .wave {
+    animation: wave 1.5s infinite ease-in-out;
 }
 
-header nav .social-links a {
-    font-size: 1.8rem;
-    color: white;
-    margin-left: 15px;
-    text-decoration: none;
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
 }
 
-header nav .social-links a:hover {
-    color: #f7f7f7;
+#rotating-text {
+    font-size: 1.5em;
+    animation: rotateText 8s linear infinite;
 }
 
-/* Container for sections */
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Section styles */
-section {
-    padding: 40px 0;
-    background: #fff;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-section ul {
-    list-style-type: none;
-}
-
-section ul li {
-    margin-bottom: 10px;
-}
-
-section p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
+@keyframes rotateText {
+    0% { content: "Data Scientist"; }
+    25% { content: "Machine Learning Engineer"; }
+    50% { content: "AI Enthusiast"; }
+    75% { content: "Teacher & Mentor"; }
+    100% { content: "Data Science Guru"; }
 }
 
 a {
-    color: #2575fc;
     text-decoration: none;
+    color: white;
+    padding: 12px 30px;
+    background-color: #333;
+    border-radius: 25px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
 }
 
 a:hover {
-    text-decoration: underline;
+    background-color: #ff5722;
+    transform: scale(1.05);
 }
 
-/* Footer */
-footer {
-    background: #2575fc;
-    color: white;
+#about, #skills, #projects {
+    padding: 50px 20px;
     text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
     padding: 20px;
-    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Animations */
-section.hidden {
-    opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
+.skills-container {
+    display:
