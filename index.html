@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravi Sharma - Data Scientist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Skills section */
+        .skills, .about-me, .projects {
+            margin-bottom: 30px;
+        }
+        .skill-card {
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .skill-card h3 {
+            margin-bottom: 10px;
+        }
+        .skills ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .skills ul li {
+            margin: 5px 0;
+        }
+        .skills ul li i {
+            margin-left: 10px;
+        }
+
+        /* About Me section */
+        .about-me h2 {
+            font-size: 1.8rem;
+        }
+        .about-me p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Projects section */
+        .projects h2 {
+            font-size: 1.8rem;
+        }
+        .projects ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .projects ul li {
+            margin: 10px 0;
+        }
+        .projects a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        .projects a:hover {
+            text-decoration: underline;
+        }
+
+        /* Chatbot popup animation */
+        .chatbot-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+        }
+        .chatbot-widget img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .chatbot-popup {
+            display: none;
+            position: absolute;
+            bottom: 70px;
+            left: -100%;
+            background: white;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            animation: fadeIn 0.5s ease-in;
+        }
+        .chatbot-popup .chatbot-header {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px 10px 0 0;
+        }
+        .chatbot-popup .chatbot-content {
+            padding: 20px;
+            color: #333;
+        }
+        .close-btn {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            float: right;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Skills Section -->
+        <div class="skills">
+            <div class="skill-card">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Programming Languages: Python, R, Java, C++, C</li>
+                    <li>Data Manipulation: Pandas, Numpy, SQL, MySQL, PostgreSQL, Excel</li>
+                    <li>Machine Learning: Scikit-learn, Keras, TensorFlow, PyTorch, GAN, Classification, Clustering, Feature Engineering, MLOps</li>
+                    <li>Statistics: Probability and Statistics fundamentals, Hypothesis testing, Regression analysis</li>
+                    <li>Data Visualization: Tableau, PowerBI, Matplotlib, Seaborn, Vega-Altair</li>
+                    <li>Platforms: AWS, Azure, Databricks</li>
+                    <li>Domain Knowledge: Business, Manufacturing, Supply Chain</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- About Me Section -->
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>I'm a Data Scientist with a passion for using data to solve real-world problems, especially those that have a meaningful business impact. Coming from a business family and currently pursuing my Master's in Data Science at Indiana University, I focus on projects that bridge the gap between technology and business challenges. For me, the ultimate goal is to create solutions that not only work technically but also bring real value to businesses.</p>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="projects">
+            <h2>🌟 Projects I'm Proud Of</h2>
+            <ul>
+                <li><a href="https://github.com/zravii/Google-Earth-Predicts-School-Success" target="_blank">Google Earth Predicts School Success</a>: Used <b>ResNet50</b> to predict student success by analyzing aerial views of schools and their neighborhoods. The model reached up to <b>62.09% accuracy</b> when considering surrounding areas, proving that broader context matters for both education and business planning.</li>
+                <li><a href="https://github.com/zravii/EDA" target="_blank">IU Student Well-being</a>: Conducted a survey and analysis on student stress at IU. Through <b>NLP</b> and regression modeling, we gained insights that could inform strategic decisions at the university, with <b>87%</b> of students identifying academics as the top stress factor.</li>
+                <li><a href="https://github.com/zravii/Computer-Vision" target="_blank">DRISHTI: Accessibility for All</a>: Spearheaded a team to develop a <b>CNN-based object detection</b> system for visually impaired users, achieving <b>78.5% accuracy</b> even in low-light conditions. This project addressed a significant societal challenge, focusing on accessibility.</li>
+            </ul>
+        </div>
+
+        <!-- Chatbot Widget -->
+        <div class="chatbot-widget" id="chatbot-icon">
+            <img src="chatbot-icon.png" alt="Chatbot Icon" id="chatbot-img" />
+            <div class="chatbot-popup" id="chatbot-popup">
+                <div class="chatbot-header">
+                    <span>Chat with Ravi Bot</span>
+                    <button class="close-btn" onclick="closeChatbot()">×</button>
+                </div>
+                <div class="chatbot-content">
+                    <p>Hi there! I'm Ravi's Bot. Let's chat!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("chatbot-icon").addEventListener("click", function() {
+            document.getElementById("chatbot-popup").style.display = "block";
+        });
+
+        function closeChatbot() {
+            document.getElementById("chatbot-popup").style.display = "none";
+        }
+    </script>
+</body>
+</html>
