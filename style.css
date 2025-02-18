@@ -103,29 +103,3 @@ section.visible {
     opacity: 1;
     transform: translateY(0);
 }
-
-/* Scroll to Top button */
-.scroll-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: #2575fc;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    padding: 15px;
-    font-size: 24px;
-    cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-}
-
-.scroll-to-top.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-.scroll-to-top:hover {
-    background-color: #6a11cb;
-}
