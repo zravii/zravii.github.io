@@ -47,8 +47,8 @@ header .wave {
     0% { content: "Data Scientist"; }
     25% { content: "Machine Learning Engineer"; }
     50% { content: "AI Enthusiast"; }
-    75% { content: "Teacher & Mentor"; }
-    100% { content: "Data Science Guru"; }
+    75% { content: "AI Enthusiast"; }
+    100% { content: "AI Enthusiast"; }
 }
 
 a {
@@ -86,4 +86,7 @@ h2 {
 }
 
 .skills-container {
-    display:
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 
